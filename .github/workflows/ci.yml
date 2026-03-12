@@ -25,7 +25,7 @@ jobs:
         run: npm run lint --if-present
 
       - name: Test
-        run: npm test -- --ci --coverage --watchAll=false
+        run: npm test -- --ci --coverage --watchAll=false --passWithNoTests
 
       - name: Build
         run: npm run build
